@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#9CFC86</color>
+    <color name="purple_500">#00EE08</color>
+    <color name="purple_700">#12B300</color>
+    <color name="teal_200">#373737</color>
+    <color name="teal_700">#282828</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="app_btn_Scanner_Link">#153DFF</color>
+    <color name="item_fecha_text">#787878</color>
+</resources>

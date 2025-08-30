@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="660dp"
+    android:background="@color/black"
+    android:fillViewport="true"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <!-- 🔹 Sección Fondo de pantalla -->
+        <LinearLayout
+            android:id="@+id/layoutFondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <Switch
+                android:id="@+id/switchModoClaro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Activar modo claro"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <!-- 🔹 Sección Permisos y Accesos -->
+        <LinearLayout
+            android:id="@+id/layoutAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Permisos y Accesos"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btnAccess"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Expandir"
+                android:src="@drawable/ic_access_mas"
+                app:tint="@color/item_fecha_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subAccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="32dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrar permisos de cámara"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Administrar permisos de galería"
+                android:textColor="@color/white" />
+        </LinearLayout> <!-- 🔹 Sección Preferencias --> <LinearLayout
+        android:id="@+id/layoutPreferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Preferencias de Escaneo"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnpreferencias"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Expandir"
+            android:src="@drawable/ic_access_mas"
+            app:tint="@color/item_fecha_text" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subPreferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="32dp"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/checkModoQR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escanear solo QR"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkModoBarras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escanear solo códigos de barras"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/checkSonido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activar sonido/vibración"
+                android:textColor="@color/white" />
+        </LinearLayout> <!-- 🔹 Sección Historial --> <LinearLayout
+        android:id="@+id/layoutHistorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Historial"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnHistorial"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Expandir"
+            android:src="@drawable/ic_access_mas"
+            app:tint="@color/item_fecha_text" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="32dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar historial por 30 días"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="Borrado automático activado"
+                android:textColor="@color/white" />
+        </LinearLayout> <!-- 🔹 Sección Acerca de --> <LinearLayout
+        android:id="@+id/layoutAcercaDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Acerca de"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btnAcercaDe"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Expandir"
+            android:src="@drawable/ic_access_mas"
+            app:tint="@color/item_fecha_text" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subAcercaDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="32dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Versión 1.0.0"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:text="Desarrollado por Giovas128"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

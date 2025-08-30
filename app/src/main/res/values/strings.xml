@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ScannerCByQR</string>
+    <string name="title_Scanner">Escaneo</string>
+    <string name="title_History">Historial</string>
+    <string name="title_Configuration">Configuracion</string>
+</resources>
